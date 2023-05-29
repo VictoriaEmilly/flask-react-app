@@ -16,7 +16,7 @@ function App() {
   */
   const fetchComments = async() => {
     try {
-      axios.get('http://localhost:5000/api/comments')
+      axios.get('https://victoriaemilly-zany-invention-49v9qx5rq4vf774w-5000.preview.app.github.dev/api/comments')
       .then(res => {
         setComments(res.data);
       })
@@ -32,7 +32,7 @@ function App() {
   */
   const addComment = async() => {
     try {
-      axios.post('http://localhost:5000/api/comments', { text: newComment }, {
+      axios.post('https://victoriaemilly-zany-invention-49v9qx5rq4vf774w-5000.preview.app.github.dev/api/comments', { text: newComment }, {
         headers: { 'Content-Type': 'application/json' }
       })
       .then(res => {
